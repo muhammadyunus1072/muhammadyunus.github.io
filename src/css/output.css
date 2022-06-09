@@ -538,28 +538,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 100%;
 }
 
-.z-10{
-  z-index: 10;
-}
-
 .z-30{
   z-index: 30;
 }
 
-.z-50{
-  z-index: 50;
-}
-
-.z-0{
-  z-index: 0;
-}
-
-.-z-20{
-  z-index: -20;
-}
-
-.-z-10{
-  z-index: -10;
+.z-10{
+  z-index: 10;
 }
 
 .mx-auto{
@@ -636,12 +620,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: fit-content;
 }
 
-.w-60{
-  width: 15rem;
-}
-
 .w-\[250px\]{
   width: 250px;
+}
+
+.w-60{
+  width: 15rem;
 }
 
 .max-w-\[250px\]{
@@ -703,6 +687,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-b-full{
   border-bottom-right-radius: 9999px;
   border-bottom-left-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-b-2{
@@ -796,6 +784,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pl-\[15\%\]{
   padding-left: 15%;
 }
@@ -840,8 +837,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 3.5rem;
 }
 
-.pt-10{
-  padding-top: 2.5rem;
+.pt-20{
+  padding-top: 5rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
 }
 
 .text-center{
