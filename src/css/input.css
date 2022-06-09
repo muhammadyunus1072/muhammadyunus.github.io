@@ -134,4 +134,21 @@ body {
     backdrop-filter: blur(5px);
     box-shadow: inset 0 -1px 0 0 rgba(82, 37, 70, 0.2);
 }
+#navbar ul li a::after {
+    content : "";
+    width : 100%;
+    transform : scale(0,0);
+    height : 2px;
+    background-color : #88304E;
+    z-index : 10000;
+    position : absolute;
+    bottom : 0;
+    @apply justify-self-center;
+    transition-property : all;
+    transition-duration : 300ms;
+}
+#navbar ul li a:hover::after {
+    transform : scale(1,1);
+    /* display : none; */
+}
 @media screen and ()
