@@ -70,3 +70,26 @@ AOS.init();
 gsap.from("#lefthome",{duration: 1.3, x:-200, ease:'back'});
 
 gsap.to("#homename",{duration: 2.5, text:"Muhammad Yunus", delay:1.5});
+
+// Kirim Pesan
+$("#formKontak").on("submit",(e)=>{
+  e.preventDefault();
+  axios({
+    method : "POST",
+    url : "https://apilaundry.arashiyunus.com/api/auth/kirimEmail",
+    data : {
+      subject : "Email Dari kontak nama : "+$("#nama").val()+", no telp : "+$("#noTelp").val()+", email : "+$("#email").val()+".",
+      body : $("#pesan").val()
+    }
+  }).then((res)=>{
+    if(res.status == 200){
+      swal("Berhasil !", "Pesan telah dikirim", "success");
+    }else{
+      swal("Gagal !", "Pesan tidak terkirim", "error");
+    }
+    $("#nama").val("");
+    $("#noTelp").val("");
+    $("#email").val("");
+    $("#pesan").val("");
+  })
+})
