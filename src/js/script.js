@@ -47,15 +47,6 @@ function copy(data, e){
   },5000)
   navigator.clipboard.writeText(data);
 }
-function githubCopy(){
-  navigator.clipboard.writeText("https://github.com/muhammadyunus1072");
-}
-function facebookCopy(){
-  navigator.clipboard.writeText("https://www.facebook.com/Arashiyunus");
-}
-function linkedinCopy(){
-  navigator.clipboard.writeText("https://www.linkedin.com/in/muhammad-yunus-56688723a");
-}
 
 const projectContainer = document.querySelectorAll(".project-container");
 
