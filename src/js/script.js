@@ -38,8 +38,14 @@ function coba(){
 
 // Copy Akun to Clipboard
 
-function gmailCopy(){
-  navigator.clipboard.writeText("muhammadyunus1072@gmail.com");
+function copy(data, e){
+  $(e.target).prev().removeClass('scale-0')
+  $(e.target).prev().addClass('scale-100')
+  setTimeout(()=>{
+    $(e.target).prev().addClass('scale-0')
+    $(e.target).prev().removeClass('scale-100')
+  },5000)
+  navigator.clipboard.writeText(data);
 }
 function githubCopy(){
   navigator.clipboard.writeText("https://github.com/muhammadyunus1072");
